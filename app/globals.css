@@ -409,7 +409,8 @@ main, .nav, .footer { position: relative; z-index: 1; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 760px) {
+/* Compact (hamburger) nav up to 1024px: the full desktop nav row needs ~950px in English and wraps in Arabic (ISSUE-001). */
+@media (max-width: 1024px) {
   .nav__inner { gap: 16px; height: 72px; }
   .nav__cta { display: none; }
   .lang-switch { margin-inline-start: auto; }
@@ -432,14 +433,16 @@ main, .nav, .footer { position: relative; z-index: 1; }
   }
   .nav__links.is-open { opacity: 1; transform: none; pointer-events: auto; }
   .nav__links a { font-size: 24px; font-weight: 400; text-transform: none; letter-spacing: -0.02em; padding: 12px 0; color: var(--bone); }
-  .form { grid-template-columns: minmax(0, 1fr); gap: 30px; }
-  .features, .checks { grid-template-columns: 1fr; }
-  .reels { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .footer__grid { grid-template-columns: 1fr; }
   .nav__group { display: contents; }
   .nav__caret { display: none; }
   .nav__menu { position: static; opacity: 1; visibility: visible; transform: none; border: 0; padding: 0 0 6px; padding-inline-start: 16px; margin: 0; min-width: 0; background: none; }
   .nav__menu a { font-size: 18px; color: var(--mist); padding: 6px 0; }
+}
+@media (max-width: 760px) {
+  .form { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .features, .checks { grid-template-columns: 1fr; }
+  .reels { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .footer__grid { grid-template-columns: 1fr; }
 }
 
 /* ---------- Work showcase strip ---------- */
@@ -627,7 +630,7 @@ body { transition: background-color .3s ease, color .3s ease; }
 /* email & phone stay left-to-right inside Arabic text */
 [dir="rtl"] [dir="ltr"] { unicode-bidi: isolate; }
 
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   .nav .lang-switch { display: none; }
   .nav .theme-toggle { margin-inline-start: auto; }
   .nav__lang-mobile { display: block; border-top: 1px solid var(--line); margin-top: 6px; }
