@@ -13,3 +13,5 @@ data/messages.json
 data/stats.json
 data/*.tmp
 .gstack/
+test-results/
+playwright-report/
