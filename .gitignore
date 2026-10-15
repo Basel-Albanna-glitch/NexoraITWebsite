@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+
+storage/
+
+# private runtime data (stays on the server, never in git)
+data/messages.json
+data/stats.json
+data/*.tmp
+.gstack/

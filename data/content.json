@@ -1,0 +1,1069 @@
+{
+  "settings": {
+    "email": "nexoraitt@gmail.com",
+    "phone": "",
+    "whatsapp": "",
+    "location": {
+      "en": "Amman, Jordan",
+      "ar": "عمّان، الأردن"
+    },
+    "hours": {
+      "en": "Sunday – Thursday, 9:00 – 18:00",
+      "ar": "الأحد – الخميس، 9:00 – 18:00"
+    },
+    "social": {
+      "instagram": "https://www.instagram.com/nexoraitt",
+      "facebook": "https://www.facebook.com/share/1C3coqi1CC/",
+      "linkedin": "",
+      "x": ""
+    }
+  },
+  "pages": {
+    "home": {
+      "en": {
+        "hero": {
+          "label": "Software & digital products",
+          "title": "Software that runs your business.",
+          "body": "NexoraIT builds websites, ERP systems, POS solutions and mobile apps — designed around how your business actually works, and supported long after launch."
+        },
+        "manifesto": {
+          "title": "Built around your business. Not the other way round.",
+          "label": "Why NexoraIT",
+          "body": "Off-the-shelf software makes you bend your processes to fit it. We do the opposite — we study how your team sells, stocks, serves and reports, then build the tools that fit like they were always there.",
+          "body2": "One team from first sketch to final release, and the same team when you need something new."
+        },
+        "services": {
+          "label": "Services",
+          "title": "Four things.",
+          "titleDim": "Done properly."
+        },
+        "work": {
+          "label": "Selected work"
+        },
+        "approach": {
+          "label": "Our approach",
+          "title": "From idea to launch, in four moves.",
+          "steps": [
+            {
+              "title": "Discover",
+              "text": "We learn how your business works today and what it needs tomorrow."
+            },
+            {
+              "title": "Design",
+              "text": "Clear flows and interfaces, approved by you before a line of code is written."
+            },
+            {
+              "title": "Build",
+              "text": "Short, visible iterations — you see real progress every week."
+            },
+            {
+              "title": "Launch & support",
+              "text": "Smooth go-live, staff training and ongoing support as you grow."
+            }
+          ]
+        },
+        "industries": {
+          "title": "Made for businesses that never stop moving.",
+          "label": "Industries",
+          "body": "From a single shop to multi-branch operations, we tailor every system to the way your sector works.",
+          "tags": [
+            "Retail",
+            "Restaurants & cafés",
+            "Healthcare & clinics",
+            "Manufacturing",
+            "Wholesale & distribution",
+            "Education",
+            "Salons & barbershops",
+            "Professional services"
+          ]
+        },
+        "contact": {
+          "label": "Contact",
+          "title": "Let's build what's next."
+        }
+      },
+      "ar": {
+        "hero": {
+          "label": "برمجيات ومنتجات رقمية",
+          "title": "برمجيات تُدير أعمالك.",
+          "body": "تبني NexoraIT المواقع الإلكترونية وأنظمة ERP وأنظمة نقاط البيع وتطبيقات الجوال — مصمَّمة حول طريقة عمل شركتك فعلًا، ومدعومة لفترة طويلة بعد الإطلاق."
+        },
+        "manifesto": {
+          "title": "مبنيّة حول أعمالك. لا العكس.",
+          "label": "لماذا NexoraIT",
+          "body": "البرامج الجاهزة تجبرك على تغيير طريقة عملك لتناسبها. نحن نفعل العكس — ندرس كيف يبيع فريقك ويخزّن ويخدم ويُعِدّ التقارير، ثم نبني الأدوات التي تناسبه وكأنها كانت موجودة دائمًا.",
+          "body2": "فريق واحد من أول رسمة حتى الإصدار النهائي، والفريق نفسه عندما تحتاج شيئًا جديدًا."
+        },
+        "services": {
+          "label": "خدماتنا",
+          "title": "أربعة أشياء.",
+          "titleDim": "نُتقنها جيدًا."
+        },
+        "work": {
+          "label": "من أعمالنا"
+        },
+        "approach": {
+          "label": "منهجيتنا",
+          "title": "من الفكرة إلى الإطلاق، في أربع خطوات.",
+          "steps": [
+            {
+              "title": "الاكتشاف",
+              "text": "نتعرّف على طريقة عمل شركتك اليوم وما تحتاجه غدًا."
+            },
+            {
+              "title": "التصميم",
+              "text": "مسارات وواجهات واضحة توافق عليها قبل كتابة أي سطر برمجي."
+            },
+            {
+              "title": "التطوير",
+              "text": "مراحل قصيرة وواضحة — ترى تقدّمًا حقيقيًا كل أسبوع."
+            },
+            {
+              "title": "الإطلاق والدعم",
+              "text": "إطلاق سلس وتدريب للموظفين ودعم مستمر مع نمو أعمالك."
+            }
+          ]
+        },
+        "industries": {
+          "title": "مصمَّمة لأعمال لا تتوقف.",
+          "label": "القطاعات",
+          "body": "من متجر واحد إلى عمليات متعددة الفروع، نُفصّل كل نظام بما يناسب طريقة عمل قطاعك.",
+          "tags": [
+            "التجزئة",
+            "المطاعم والمقاهي",
+            "الرعاية الصحية والعيادات",
+            "التصنيع",
+            "الجملة والتوزيع",
+            "التعليم",
+            "الصالونات ومحلات الحلاقة",
+            "الخدمات المهنية"
+          ]
+        },
+        "contact": {
+          "label": "تواصل معنا",
+          "title": "لنبنِ ما هو قادم."
+        }
+      }
+    },
+    "servicesPage": {
+      "en": {
+        "hero": {
+          "label": "Services",
+          "title": "Four things. Done properly.",
+          "body": "Every product we build is designed to work with the others — your website, ERP, POS and apps can share one set of customers, products and numbers."
+        },
+        "together": {
+          "title": "Better together.",
+          "label": "One connected stack",
+          "body": "A sale on your POS updates stock in your ERP. An order on your website lands in the same system. Your mobile app shows customers the same prices and availability. No double entry, no end-of-day reconciling — just one live picture of your business."
+        }
+      },
+      "ar": {
+        "hero": {
+          "label": "خدماتنا",
+          "title": "أربعة أشياء. نُتقنها جيدًا.",
+          "body": "كل منتج نبنيه مصمَّم ليعمل مع البقية — موقعك ونظام ERP ونقاط البيع والتطبيقات تتشارك العملاء والمنتجات والأرقام نفسها."
+        },
+        "together": {
+          "title": "أفضل معًا.",
+          "label": "منظومة واحدة متصلة",
+          "body": "عملية بيع على نقطة البيع تُحدّث المخزون في نظام ERP. وطلب على موقعك يصل إلى النظام نفسه. وتطبيقك يعرض للعملاء الأسعار والتوفّر نفسيهما. لا إدخال مكرر ولا مطابقة في آخر اليوم — صورة حيّة واحدة لأعمالك."
+        }
+      }
+    },
+    "work": {
+      "en": {
+        "hero": {
+          "label": "Our work",
+          "title": "Built by us. Running today.",
+          "body": "Clinic systems, point-of-sale, ERP and booking platforms — real software that real teams use every day, in Arabic and English."
+        },
+        "ctaLabel": "Your project could be next"
+      },
+      "ar": {
+        "hero": {
+          "label": "أعمالنا",
+          "title": "صنعناها بأيدينا. وتعمل اليوم.",
+          "body": "أنظمة عيادات ونقاط بيع وأنظمة ERP ومنصات حجز — برمجيات حقيقية تستخدمها فرق حقيقية كل يوم، بالعربية والإنجليزية."
+        },
+        "ctaLabel": "مشروعك قد يكون التالي"
+      }
+    },
+    "about": {
+      "en": {
+        "hero": {
+          "label": "About NexoraIT",
+          "title": "We build the software behind growing businesses.",
+          "body": "NexoraIT is a software company based in Amman, Jordan. We design and build websites, ERP systems, point-of-sale and mobile apps for businesses that want technology to fit the way they work."
+        },
+        "story": {
+          "title": "Why we started.",
+          "label": "Our story",
+          "body": "We kept meeting business owners stuck between paper files, spreadsheets and software that was never designed for them — systems in a language their staff didn't use, built for processes they didn't follow.",
+          "body2": "So we built our own: a bilingual ERP, a retail POS that keeps selling offline, and clinic and booking systems shaped around real teams. Today we bring the same approach to every client — understand the business first, then build exactly what it needs."
+        },
+        "values": {
+          "label": "What we believe",
+          "title": "Four principles.",
+          "titleDim": "Every project.",
+          "items": [
+            {
+              "title": "Business first",
+              "text": "We start with how you work — your counter, your warehouse, your clinic — and only then write code."
+            },
+            {
+              "title": "Bilingual by default",
+              "text": "Arabic and English, right-to-left and left-to-right, built in from day one — never bolted on."
+            },
+            {
+              "title": "Honest timelines",
+              "text": "Clear scope, fixed quotes and weekly progress you can see. No surprises at the end."
+            },
+            {
+              "title": "Here after launch",
+              "text": "Support, training and improvements for as long as you use what we build."
+            }
+          ]
+        },
+        "promises": {
+          "label": "Working with us",
+          "title": "What you can count on.",
+          "items": [
+            {
+              "title": "You own it",
+              "text": "Your data, your code and your accounts belong to your business."
+            },
+            {
+              "title": "One team",
+              "text": "The people who design your system are the people who support it."
+            },
+            {
+              "title": "Connected",
+              "text": "Website, ERP, POS and apps that share one set of numbers."
+            }
+          ]
+        },
+        "cta": {
+          "label": "Work with us",
+          "title": "Let's talk about your business."
+        }
+      },
+      "ar": {
+        "hero": {
+          "label": "عن NexoraIT",
+          "title": "نبني البرمجيات التي تقف خلف الشركات النامية.",
+          "body": "NexoraIT شركة برمجيات مقرّها عمّان، الأردن. نصمّم ونبني المواقع الإلكترونية وأنظمة ERP ونقاط البيع وتطبيقات الجوال للشركات التي تريد تقنية تناسب طريقة عملها."
+        },
+        "story": {
+          "title": "لماذا بدأنا.",
+          "label": "قصتنا",
+          "body": "كنا نلتقي باستمرار بأصحاب أعمال عالقين بين الملفات الورقية وجداول البيانات وبرامج لم تُصمَّم لهم — أنظمة بلغة لا يستخدمها موظفوهم، ومبنية لإجراءات لا يتّبعونها.",
+          "body2": "فبنينا أنظمتنا بأنفسنا: نظام ERP ثنائي اللغة، ونقطة بيع تواصل البيع دون إنترنت، وأنظمة عيادات وحجوزات مصمَّمة حول فرق حقيقية. واليوم نتّبع النهج نفسه مع كل عميل — نفهم العمل أولًا، ثم نبني ما يحتاجه بالضبط."
+        },
+        "values": {
+          "label": "ما نؤمن به",
+          "title": "أربعة مبادئ.",
+          "titleDim": "في كل مشروع.",
+          "items": [
+            {
+              "title": "العمل أولًا",
+              "text": "نبدأ من طريقة عملك — صندوق المحاسبة، المستودع، العيادة — ثم نكتب الكود."
+            },
+            {
+              "title": "ثنائي اللغة دائمًا",
+              "text": "العربية والإنجليزية، من اليمين ومن اليسار، مدمجتان من اليوم الأول — لا إضافة لاحقة."
+            },
+            {
+              "title": "مواعيد صادقة",
+              "text": "نطاق واضح وأسعار ثابتة وتقدّم أسبوعي تراه بنفسك. لا مفاجآت في النهاية."
+            },
+            {
+              "title": "معك بعد الإطلاق",
+              "text": "دعم وتدريب وتحسينات طوال فترة استخدامك لما نبنيه."
+            }
+          ]
+        },
+        "promises": {
+          "label": "العمل معنا",
+          "title": "ما يمكنك الاعتماد عليه.",
+          "items": [
+            {
+              "title": "أنت المالك",
+              "text": "بياناتك والكود وحساباتك ملك لشركتك."
+            },
+            {
+              "title": "فريق واحد",
+              "text": "من يصمّم نظامك هو من يدعمه."
+            },
+            {
+              "title": "كل شيء متصل",
+              "text": "موقع ونظام ERP ونقاط بيع وتطبيقات تتشارك الأرقام نفسها."
+            }
+          ]
+        },
+        "cta": {
+          "label": "اعمل معنا",
+          "title": "لنتحدث عن أعمالك."
+        }
+      }
+    },
+    "contact": {
+      "en": {
+        "label": "Contact",
+        "title": "Let's build what's next.",
+        "nextTitle": "What happens next.",
+        "steps": [
+          {
+            "title": "We reply",
+            "text": "Within one business day, with a few questions about your business."
+          },
+          {
+            "title": "Free consultation",
+            "text": "A short call or visit to understand what you need — no obligation."
+          },
+          {
+            "title": "Clear proposal",
+            "text": "Scope, timeline and a fixed quote you can plan around."
+          }
+        ]
+      },
+      "ar": {
+        "label": "تواصل معنا",
+        "title": "لنبنِ ما هو قادم.",
+        "nextTitle": "ماذا يحدث بعد ذلك.",
+        "steps": [
+          {
+            "title": "نرد عليك",
+            "text": "خلال يوم عمل واحد، مع بعض الأسئلة عن أعمالك."
+          },
+          {
+            "title": "استشارة مجانية",
+            "text": "مكالمة قصيرة أو زيارة لفهم ما تحتاجه — دون أي التزام."
+          },
+          {
+            "title": "عرض واضح",
+            "text": "النطاق والجدول الزمني وسعر ثابت يمكنك التخطيط على أساسه."
+          }
+        ]
+      }
+    },
+    "cta": {
+      "en": {
+        "label": "Start a project",
+        "title": "Let's build what's next.",
+        "text": "Tell us what you need — we'll reply within one business day with next steps and a clear plan."
+      },
+      "ar": {
+        "label": "ابدأ مشروعك",
+        "title": "لنبنِ ما هو قادم.",
+        "text": "أخبرنا بما تحتاجه — وسنرد خلال يوم عمل واحد بالخطوات التالية وخطة واضحة."
+      }
+    }
+  },
+  "services": [
+    {
+      "slug": "websites",
+      "shape": "wave",
+      "en": {
+        "title": "Websites",
+        "summary": "Fast, beautiful websites and web platforms that turn visitors into customers — from company sites to e-commerce stores.",
+        "headline": "Websites that work as hard as you do.",
+        "intro": "Your website is often the first conversation a customer has with you. We design and build sites that load instantly, look sharp on every screen and guide visitors toward getting in touch or buying.",
+        "highlights": [
+          "Corporate sites",
+          "E-commerce",
+          "Web apps",
+          "SEO & performance"
+        ],
+        "features": [
+          {
+            "title": "Custom design",
+            "text": "A look built around your brand — not a template everyone else is using."
+          },
+          {
+            "title": "E-commerce",
+            "text": "Online stores with product catalogues, carts, secure payments and order management."
+          },
+          {
+            "title": "Content you control",
+            "text": "An easy admin panel to update pages, products and news without calling a developer."
+          },
+          {
+            "title": "Speed & SEO",
+            "text": "Optimised for Core Web Vitals and search engines from day one, so customers can find you."
+          },
+          {
+            "title": "Multilingual",
+            "text": "Arabic, English and more — including full right-to-left layouts done properly."
+          },
+          {
+            "title": "Hosting & care",
+            "text": "Secure hosting, SSL, backups, monitoring and updates handled for you."
+          }
+        ],
+        "audience": {
+          "headline": "For brands ready to be taken seriously online.",
+          "text": "Whether you're launching a new business or replacing a site that no longer reflects who you are, we build something you'll be proud to share.",
+          "tags": [
+            "Company websites",
+            "Online stores",
+            "Landing pages",
+            "Booking sites",
+            "Portals & dashboards",
+            "Web applications"
+          ]
+        },
+        "process": [
+          {
+            "title": "Discover",
+            "text": "Goals, audience, content and competitors — we get clear on what success looks like."
+          },
+          {
+            "title": "Design",
+            "text": "Wireframes and visual designs you review and approve before development."
+          },
+          {
+            "title": "Build",
+            "text": "Responsive, accessible development with weekly previews on a live staging link."
+          },
+          {
+            "title": "Launch & grow",
+            "text": "Go-live, analytics, training, and ongoing improvements as you grow."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "How long does a website take?",
+            "text": "A company website typically takes 3–6 weeks. E-commerce stores and web applications usually take 6–12 weeks depending on scope."
+          },
+          {
+            "title": "Can I update the website myself?",
+            "text": "Yes. Every site comes with an admin panel and a short training session so you can edit text, images, products and posts on your own."
+          },
+          {
+            "title": "Do you handle hosting and the domain?",
+            "text": "We can. We set up hosting, SSL, email-sending and your domain, or work with the provider you already use."
+          },
+          {
+            "title": "Will it work in Arabic?",
+            "text": "Yes — we build fully bilingual sites with proper right-to-left layouts, not just translated text."
+          }
+        ]
+      },
+      "ar": {
+        "title": "المواقع الإلكترونية",
+        "summary": "مواقع ومنصات ويب سريعة وجميلة تحوّل الزوار إلى عملاء — من مواقع الشركات إلى المتاجر الإلكترونية.",
+        "headline": "مواقع تعمل بجدّ مثلك.",
+        "intro": "موقعك غالبًا هو أول حديث بينك وبين العميل. نصمّم ونبني مواقع تفتح فورًا، وتبدو أنيقة على كل شاشة، وتقود الزائر نحو التواصل أو الشراء.",
+        "highlights": [
+          "مواقع الشركات",
+          "المتاجر الإلكترونية",
+          "تطبيقات الويب",
+          "تحسين محركات البحث والأداء"
+        ],
+        "features": [
+          {
+            "title": "تصميم خاص",
+            "text": "هوية مبنية حول علامتك التجارية — لا قالب يستخدمه الجميع."
+          },
+          {
+            "title": "متاجر إلكترونية",
+            "text": "متاجر بكتالوج منتجات وسلة شراء ودفع آمن وإدارة للطلبات."
+          },
+          {
+            "title": "محتوى تتحكم به",
+            "text": "لوحة تحكم سهلة لتحديث الصفحات والمنتجات والأخبار دون الحاجة لمبرمج."
+          },
+          {
+            "title": "السرعة ومحركات البحث",
+            "text": "محسَّن للسرعة ولمحركات البحث من اليوم الأول ليجدك العملاء."
+          },
+          {
+            "title": "متعدد اللغات",
+            "text": "العربية والإنجليزية وغيرهما — مع تخطيط كامل من اليمين إلى اليسار بشكل صحيح."
+          },
+          {
+            "title": "الاستضافة والصيانة",
+            "text": "استضافة آمنة وشهادة SSL ونسخ احتياطي ومراقبة وتحديثات نتولاها عنك."
+          }
+        ],
+        "audience": {
+          "headline": "للعلامات الجاهزة لتُؤخذ بجدية على الإنترنت.",
+          "text": "سواء كنت تطلق عملًا جديدًا أو تستبدل موقعًا لم يعد يعبّر عنك، نبني لك شيئًا تفخر بمشاركته.",
+          "tags": [
+            "مواقع الشركات",
+            "المتاجر الإلكترونية",
+            "صفحات الهبوط",
+            "مواقع الحجز",
+            "البوابات ولوحات التحكم",
+            "تطبيقات الويب"
+          ]
+        },
+        "process": [
+          {
+            "title": "الاكتشاف",
+            "text": "الأهداف والجمهور والمحتوى والمنافسون — نحدّد معًا شكل النجاح."
+          },
+          {
+            "title": "التصميم",
+            "text": "مخططات وتصاميم مرئية تراجعها وتوافق عليها قبل التطوير."
+          },
+          {
+            "title": "التطوير",
+            "text": "تطوير متجاوب وسهل الاستخدام مع معاينات أسبوعية على رابط تجريبي مباشر."
+          },
+          {
+            "title": "الإطلاق والنمو",
+            "text": "الإطلاق والتحليلات والتدريب وتحسينات مستمرة مع نموّك."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "كم يستغرق بناء الموقع؟",
+            "text": "موقع الشركة يستغرق عادةً من 3 إلى 6 أسابيع. أما المتاجر الإلكترونية وتطبيقات الويب فتستغرق عادةً من 6 إلى 12 أسبوعًا حسب النطاق."
+          },
+          {
+            "title": "هل يمكنني تحديث الموقع بنفسي؟",
+            "text": "نعم. كل موقع يأتي مع لوحة تحكم وجلسة تدريب قصيرة لتعدّل النصوص والصور والمنتجات والمنشورات بنفسك."
+          },
+          {
+            "title": "هل تتولون الاستضافة والنطاق؟",
+            "text": "نعم. نُعِدّ الاستضافة وشهادة SSL وإرسال البريد ونطاقك، أو نعمل مع المزوّد الذي تستخدمه حاليًا."
+          },
+          {
+            "title": "هل سيعمل بالعربية؟",
+            "text": "نعم — نبني مواقع ثنائية اللغة بالكامل مع تخطيط صحيح من اليمين إلى اليسار، لا مجرد نصوص مترجمة."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "erp",
+      "shape": "lattice",
+      "en": {
+        "title": "ERP Systems",
+        "summary": "One system for your whole operation: finance, inventory, purchasing, HR and reporting, connected and in real time.",
+        "headline": "Your whole business. One system.",
+        "intro": "Spreadsheets, disconnected apps and manual re-typing slow every team down. We build and implement ERP systems that connect finance, inventory, sales, purchasing and people — so everyone works from the same live numbers.",
+        "highlights": [
+          "Accounting",
+          "Inventory & warehouse",
+          "HR & payroll",
+          "Dashboards"
+        ],
+        "features": [
+          {
+            "title": "Finance & accounting",
+            "text": "General ledger, invoicing, expenses, VAT/tax and financial statements in one place."
+          },
+          {
+            "title": "Inventory & warehouse",
+            "text": "Stock levels across locations, transfers, batches, expiry dates and automatic reorder points."
+          },
+          {
+            "title": "Sales & purchasing",
+            "text": "Quotes, orders, suppliers and purchase approvals flowing straight into stock and accounts."
+          },
+          {
+            "title": "HR & payroll",
+            "text": "Employee records, attendance, leave and payroll that matches local regulations."
+          },
+          {
+            "title": "Reports & dashboards",
+            "text": "Live KPIs for owners and managers — sales, margins, cash flow and stock value at a glance."
+          },
+          {
+            "title": "Roles & permissions",
+            "text": "Each person sees exactly what they need, with a full audit trail of who changed what."
+          }
+        ],
+        "audience": {
+          "headline": "For businesses that have outgrown spreadsheets.",
+          "text": "If your teams copy numbers between systems, wait for month-end to know how you're doing, or can't trust stock counts, an ERP pays for itself quickly.",
+          "tags": [
+            "Trading & distribution",
+            "Manufacturing",
+            "Retail chains",
+            "Services companies",
+            "Healthcare",
+            "Construction"
+          ]
+        },
+        "process": [
+          {
+            "title": "Analyse",
+            "text": "We map your current processes, documents and pain points department by department."
+          },
+          {
+            "title": "Configure",
+            "text": "The system is tailored to your workflows, with custom modules where you need them."
+          },
+          {
+            "title": "Migrate & train",
+            "text": "Your existing data is moved over and every team is trained on their part of the system."
+          },
+          {
+            "title": "Go live & support",
+            "text": "A guided go-live, then ongoing support, improvements and new modules as you grow."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "Can the ERP be customised to our processes?",
+            "text": "Yes. We start from proven modules and tailor screens, approvals, reports and documents to the way your business actually works."
+          },
+          {
+            "title": "Can you move our existing data?",
+            "text": "Yes — customers, suppliers, products, opening balances and history can be imported from spreadsheets or your current system."
+          },
+          {
+            "title": "Does it connect to our POS or online store?",
+            "text": "Yes. Sales from our POS systems and e-commerce sites flow into the ERP automatically, and we can integrate third-party tools too."
+          },
+          {
+            "title": "Is it cloud-based?",
+            "text": "It can run in the cloud so you can access it securely from anywhere, or on your own servers if you prefer."
+          }
+        ]
+      },
+      "ar": {
+        "title": "أنظمة ERP",
+        "summary": "نظام واحد لكل عملياتك: المالية والمخزون والمشتريات والموارد البشرية والتقارير، متصلة ولحظية.",
+        "headline": "كل أعمالك. في نظام واحد.",
+        "intro": "جداول البيانات والتطبيقات المنفصلة وإعادة الإدخال اليدوي تُبطئ كل فريق. نبني ونطبّق أنظمة ERP تربط المالية والمخزون والمبيعات والمشتريات والموظفين — ليعمل الجميع على الأرقام الحيّة نفسها.",
+        "highlights": [
+          "المحاسبة",
+          "المخزون والمستودعات",
+          "الموارد البشرية والرواتب",
+          "لوحات المؤشرات"
+        ],
+        "features": [
+          {
+            "title": "المالية والمحاسبة",
+            "text": "دفتر الأستاذ والفواتير والمصاريف وضريبة المبيعات والقوائم المالية في مكان واحد."
+          },
+          {
+            "title": "المخزون والمستودعات",
+            "text": "أرصدة المخزون في كل المواقع والتحويلات والدفعات وتواريخ الانتهاء وحدود إعادة الطلب التلقائية."
+          },
+          {
+            "title": "المبيعات والمشتريات",
+            "text": "عروض الأسعار والطلبات والموردون وموافقات الشراء تنتقل مباشرة إلى المخزون والحسابات."
+          },
+          {
+            "title": "الموارد البشرية والرواتب",
+            "text": "سجلات الموظفين والحضور والإجازات والرواتب وفق الأنظمة المحلية."
+          },
+          {
+            "title": "التقارير ولوحات المؤشرات",
+            "text": "مؤشرات حيّة للمالكين والمدراء — المبيعات والأرباح والتدفق النقدي وقيمة المخزون بلمحة."
+          },
+          {
+            "title": "الأدوار والصلاحيات",
+            "text": "كل شخص يرى ما يحتاجه بالضبط، مع سجل كامل لمن غيّر ماذا."
+          }
+        ],
+        "audience": {
+          "headline": "للشركات التي تجاوزت جداول البيانات.",
+          "text": "إذا كانت فرقك تنسخ الأرقام بين الأنظمة، أو تنتظر نهاية الشهر لتعرف وضعها، أو لا تثق بجرد المخزون، فإن نظام ERP يسترد كلفته بسرعة.",
+          "tags": [
+            "التجارة والتوزيع",
+            "التصنيع",
+            "سلاسل التجزئة",
+            "شركات الخدمات",
+            "الرعاية الصحية",
+            "المقاولات"
+          ]
+        },
+        "process": [
+          {
+            "title": "التحليل",
+            "text": "نرسم إجراءاتك ومستنداتك ونقاط الضعف الحالية قسمًا قسمًا."
+          },
+          {
+            "title": "الإعداد",
+            "text": "يُفصَّل النظام على سير عملك، مع وحدات خاصة حيث تحتاجها."
+          },
+          {
+            "title": "نقل البيانات والتدريب",
+            "text": "ننقل بياناتك الحالية وندرّب كل فريق على الجزء الخاص به."
+          },
+          {
+            "title": "التشغيل والدعم",
+            "text": "تشغيل بإشراف كامل، ثم دعم وتحسينات ووحدات جديدة مع نموّك."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "هل يمكن تخصيص النظام لإجراءاتنا؟",
+            "text": "نعم. نبدأ من وحدات مجرّبة ونفصّل الشاشات والموافقات والتقارير والمستندات على طريقة عملك الفعلية."
+          },
+          {
+            "title": "هل يمكنكم نقل بياناتنا الحالية؟",
+            "text": "نعم — العملاء والموردون والمنتجات والأرصدة الافتتاحية والسجلات يمكن استيرادها من جداول البيانات أو من نظامك الحالي."
+          },
+          {
+            "title": "هل يتصل بنقاط البيع أو المتجر الإلكتروني؟",
+            "text": "نعم. المبيعات من أنظمة نقاط البيع والمتاجر الإلكترونية لدينا تنتقل تلقائيًا إلى النظام، ويمكننا ربط أدوات أخرى أيضًا."
+          },
+          {
+            "title": "هل هو نظام سحابي؟",
+            "text": "يمكن تشغيله على السحابة لتصل إليه بأمان من أي مكان، أو على خوادمك الخاصة إن فضّلت."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "pos",
+      "shape": "torus",
+      "en": {
+        "title": "POS Systems",
+        "summary": "Point-of-sale built for the counter and the back office — quick checkout, stock that updates itself, sales you can see live.",
+        "headline": "Faster checkout. Smarter counter.",
+        "intro": "A point-of-sale system should make every sale quicker, not slower. Ours handles the rush at the counter and keeps stock, staff and reports in sync behind the scenes — across one branch or fifty.",
+        "highlights": [
+          "Retail & restaurants",
+          "Multi-branch",
+          "Offline mode",
+          "Payments & receipts"
+        ],
+        "features": [
+          {
+            "title": "Quick checkout",
+            "text": "Barcode scanning, quick keys, discounts, split bills and returns in a few taps."
+          },
+          {
+            "title": "Restaurant mode",
+            "text": "Tables, floor plans, modifiers, kitchen display and order tickets that go straight to the kitchen."
+          },
+          {
+            "title": "Works offline",
+            "text": "Keeps selling when the internet drops, then syncs everything automatically when it's back."
+          },
+          {
+            "title": "Multi-branch",
+            "text": "Central menus, prices and stock with live sales from every branch in one dashboard."
+          },
+          {
+            "title": "Payments & receipts",
+            "text": "Card terminals, cash, mixed payments, printed or digital receipts and tax-compliant invoicing."
+          },
+          {
+            "title": "Shifts & staff",
+            "text": "Cash drawer control, shift reports, user permissions and staff performance."
+          }
+        ],
+        "audience": {
+          "headline": "For counters that never get a quiet minute.",
+          "text": "From a single coffee shop to a chain of stores, we fit the POS to your hardware, your menu or catalogue and the way your staff actually work.",
+          "tags": [
+            "Retail stores",
+            "Restaurants & cafés",
+            "Supermarkets",
+            "Pharmacies",
+            "Salons & services",
+            "Multi-branch chains"
+          ]
+        },
+        "process": [
+          {
+            "title": "Plan",
+            "text": "We review your products or menu, branches, hardware and payment providers."
+          },
+          {
+            "title": "Set up",
+            "text": "Catalogue, prices, taxes, users and devices configured and tested in your space."
+          },
+          {
+            "title": "Train",
+            "text": "Hands-on training for cashiers and managers, so day one runs smoothly."
+          },
+          {
+            "title": "Support",
+            "text": "Fast support when you need it and regular updates with new features."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "What hardware do I need?",
+            "text": "Our POS runs on Windows, Android tablets and touch terminals, and works with common receipt printers, barcode scanners, cash drawers and card terminals. We can supply or recommend hardware."
+          },
+          {
+            "title": "What happens if the internet goes down?",
+            "text": "You keep selling. Sales are stored on the device and synced automatically when the connection returns."
+          },
+          {
+            "title": "Can I see sales from my phone?",
+            "text": "Yes — owners get a live dashboard and reports on mobile and web, for every branch."
+          },
+          {
+            "title": "Does it connect to my accounting or ERP?",
+            "text": "Yes. Sales, payments and stock movements flow into our ERP or can be exported to your accounting system."
+          }
+        ]
+      },
+      "ar": {
+        "title": "أنظمة نقاط البيع",
+        "summary": "نقطة بيع مصمَّمة للكاشير وللإدارة معًا — دفع سريع ومخزون يُحدّث نفسه ومبيعات تراها لحظة بلحظة.",
+        "headline": "دفع أسرع. كاشير أذكى.",
+        "intro": "نظام نقاط البيع يجب أن يجعل كل عملية بيع أسرع لا أبطأ. نظامنا يتحمّل الزحمة عند الكاشير ويُبقي المخزون والموظفين والتقارير متزامنة خلف الكواليس — لفرع واحد أو خمسين.",
+        "highlights": [
+          "التجزئة والمطاعم",
+          "تعدد الفروع",
+          "العمل دون إنترنت",
+          "الدفع والإيصالات"
+        ],
+        "features": [
+          {
+            "title": "دفع سريع",
+            "text": "مسح الباركود والأزرار السريعة والخصومات وتقسيم الفاتورة والمرتجعات بلمسات قليلة."
+          },
+          {
+            "title": "وضع المطاعم",
+            "text": "الطاولات ومخطط الصالة والإضافات وشاشة المطبخ وطلبات تصل مباشرة إلى المطبخ."
+          },
+          {
+            "title": "يعمل دون إنترنت",
+            "text": "يواصل البيع عند انقطاع الإنترنت، ثم يزامن كل شيء تلقائيًا عند عودته."
+          },
+          {
+            "title": "تعدد الفروع",
+            "text": "قوائم وأسعار ومخزون مركزي مع مبيعات حيّة من كل فرع في لوحة واحدة."
+          },
+          {
+            "title": "الدفع والإيصالات",
+            "text": "أجهزة البطاقات والنقد والدفع المختلط وإيصالات مطبوعة أو رقمية وفواتير متوافقة ضريبيًا."
+          },
+          {
+            "title": "الورديات والموظفون",
+            "text": "التحكم بدرج النقد وتقارير الورديات وصلاحيات المستخدمين وأداء الموظفين."
+          }
+        ],
+        "audience": {
+          "headline": "لكاشير لا يعرف لحظة هدوء.",
+          "text": "من مقهى واحد إلى سلسلة متاجر، نُكيّف نظام نقاط البيع مع أجهزتك وقائمتك أو منتجاتك وطريقة عمل موظفيك فعلًا.",
+          "tags": [
+            "متاجر التجزئة",
+            "المطاعم والمقاهي",
+            "السوبرماركت",
+            "الصيدليات",
+            "الصالونات والخدمات",
+            "السلاسل متعددة الفروع"
+          ]
+        },
+        "process": [
+          {
+            "title": "التخطيط",
+            "text": "نراجع منتجاتك أو قائمتك وفروعك وأجهزتك ومزوّدي الدفع."
+          },
+          {
+            "title": "الإعداد",
+            "text": "إعداد المنتجات والأسعار والضرائب والمستخدمين والأجهزة واختبارها في موقعك."
+          },
+          {
+            "title": "التدريب",
+            "text": "تدريب عملي للكاشيرية والمدراء ليمرّ اليوم الأول بسلاسة."
+          },
+          {
+            "title": "الدعم",
+            "text": "دعم سريع عند الحاجة وتحديثات منتظمة بميزات جديدة."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "ما الأجهزة التي أحتاجها؟",
+            "text": "يعمل نظامنا على ويندوز وأجهزة أندرويد اللوحية وأجهزة اللمس، ومع طابعات الإيصالات وقارئات الباركود وأدراج النقد وأجهزة البطاقات الشائعة. يمكننا توفير الأجهزة أو التوصية بها."
+          },
+          {
+            "title": "ماذا يحدث إذا انقطع الإنترنت؟",
+            "text": "تواصل البيع. تُحفظ المبيعات على الجهاز وتُزامَن تلقائيًا عند عودة الاتصال."
+          },
+          {
+            "title": "هل أستطيع رؤية المبيعات من هاتفي؟",
+            "text": "نعم — يحصل المالك على لوحة وتقارير حيّة على الجوال والويب لكل الفروع."
+          },
+          {
+            "title": "هل يتصل بالمحاسبة أو بنظام ERP؟",
+            "text": "نعم. المبيعات والمدفوعات وحركات المخزون تنتقل إلى نظام ERP لدينا أو يمكن تصديرها إلى نظامك المحاسبي."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "mobile-apps",
+      "shape": "phone",
+      "en": {
+        "title": "Mobile Apps",
+        "summary": "Native-quality iOS and Android apps for your customers or your team, connected to the systems you already run.",
+        "headline": "Your business, in their pocket.",
+        "intro": "A great app keeps customers coming back and gives your team what they need on the move. We design and build polished iOS and Android apps — and the back-end that powers them.",
+        "highlights": [
+          "iOS & Android",
+          "Customer apps",
+          "Field & staff apps",
+          "Store publishing"
+        ],
+        "features": [
+          {
+            "title": "iOS & Android",
+            "text": "One codebase, native-quality performance on both platforms — faster to build and easier to maintain."
+          },
+          {
+            "title": "Customer apps",
+            "text": "Ordering, bookings, loyalty points, payments and push notifications that bring customers back."
+          },
+          {
+            "title": "Team & field apps",
+            "text": "Sales reps, drivers and technicians with orders, routes, check-ins and photos — even offline."
+          },
+          {
+            "title": "Back-end & admin",
+            "text": "Secure APIs and an admin dashboard to manage users, content and orders."
+          },
+          {
+            "title": "Integrations",
+            "text": "Connected to your ERP, POS, website and payment gateways so data flows everywhere."
+          },
+          {
+            "title": "Store launch",
+            "text": "We handle App Store and Google Play submission, listings and review guidelines."
+          }
+        ],
+        "audience": {
+          "headline": "For ideas that belong on the home screen.",
+          "text": "Whether it's a customer-facing app for your brand or an internal tool your team uses every day, we take it from first sketch to published app.",
+          "tags": [
+            "Ordering & delivery",
+            "Booking & appointments",
+            "Loyalty & rewards",
+            "Sales & field teams",
+            "Marketplaces",
+            "Internal tools"
+          ]
+        },
+        "process": [
+          {
+            "title": "Define",
+            "text": "Users, core features and a clear first version we can launch quickly."
+          },
+          {
+            "title": "Design",
+            "text": "Interactive prototypes you can tap through on your own phone before we build."
+          },
+          {
+            "title": "Build & test",
+            "text": "Iterative development with test builds on your devices every sprint."
+          },
+          {
+            "title": "Launch & iterate",
+            "text": "Store publishing, analytics and continuous updates based on real usage."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "How much does an app cost?",
+            "text": "It depends on features and integrations. After a short discovery call we give you a clear, fixed quote for the first version."
+          },
+          {
+            "title": "Do you build for both iPhone and Android?",
+            "text": "Yes — we build cross-platform apps that run natively on both, from a single codebase."
+          },
+          {
+            "title": "Will you publish the app to the stores?",
+            "text": "Yes. We prepare store listings, screenshots and handle the submission and review process."
+          },
+          {
+            "title": "Who owns the app and the code?",
+            "text": "You do. The app, source code and store accounts belong to your business."
+          }
+        ]
+      },
+      "ar": {
+        "title": "تطبيقات الجوال",
+        "summary": "تطبيقات iOS وأندرويد بجودة أصلية لعملائك أو لفريقك، متصلة بالأنظمة التي تستخدمها بالفعل.",
+        "headline": "أعمالك، في جيب عملائك.",
+        "intro": "التطبيق الرائع يُعيد العملاء مرة بعد مرة ويمنح فريقك ما يحتاجه أثناء التنقل. نصمّم ونبني تطبيقات iOS وأندرويد متقنة — والأنظمة الخلفية التي تشغّلها.",
+        "highlights": [
+          "iOS وأندرويد",
+          "تطبيقات العملاء",
+          "تطبيقات الموظفين والميدان",
+          "النشر على المتاجر"
+        ],
+        "features": [
+          {
+            "title": "iOS وأندرويد",
+            "text": "كود واحد وأداء بجودة أصلية على المنصتين — أسرع في البناء وأسهل في الصيانة."
+          },
+          {
+            "title": "تطبيقات العملاء",
+            "text": "الطلبات والحجوزات ونقاط الولاء والدفع والإشعارات التي تُعيد العملاء."
+          },
+          {
+            "title": "تطبيقات الفريق والميدان",
+            "text": "مندوبو المبيعات والسائقون والفنيون مع الطلبات والمسارات وتسجيل الحضور والصور — حتى دون إنترنت."
+          },
+          {
+            "title": "النظام الخلفي ولوحة التحكم",
+            "text": "واجهات برمجية آمنة ولوحة تحكم لإدارة المستخدمين والمحتوى والطلبات."
+          },
+          {
+            "title": "الربط مع الأنظمة",
+            "text": "متصل بنظام ERP ونقاط البيع وموقعك وبوابات الدفع لتتدفق البيانات في كل مكان."
+          },
+          {
+            "title": "الإطلاق على المتاجر",
+            "text": "نتولى النشر على App Store وGoogle Play وصفحات التطبيق وإرشادات المراجعة."
+          }
+        ],
+        "audience": {
+          "headline": "لأفكار مكانها الشاشة الرئيسية.",
+          "text": "سواء كان تطبيقًا لعملاء علامتك أو أداة داخلية يستخدمها فريقك يوميًا، نأخذه من أول رسمة حتى النشر.",
+          "tags": [
+            "الطلبات والتوصيل",
+            "الحجوزات والمواعيد",
+            "الولاء والمكافآت",
+            "فرق المبيعات والميدان",
+            "الأسواق الإلكترونية",
+            "الأدوات الداخلية"
+          ]
+        },
+        "process": [
+          {
+            "title": "التحديد",
+            "text": "المستخدمون والميزات الأساسية ونسخة أولى واضحة يمكن إطلاقها بسرعة."
+          },
+          {
+            "title": "التصميم",
+            "text": "نماذج تفاعلية تجرّبها على هاتفك قبل أن نبدأ البناء."
+          },
+          {
+            "title": "البناء والاختبار",
+            "text": "تطوير على مراحل مع نسخ تجريبية على أجهزتك في كل مرحلة."
+          },
+          {
+            "title": "الإطلاق والتطوير",
+            "text": "النشر على المتاجر والتحليلات وتحديثات مستمرة مبنية على الاستخدام الفعلي."
+          }
+        ],
+        "faqs": [
+          {
+            "title": "كم تكلفة التطبيق؟",
+            "text": "تعتمد على الميزات والربط مع الأنظمة. بعد مكالمة تعارف قصيرة نقدّم لك سعرًا واضحًا وثابتًا للنسخة الأولى."
+          },
+          {
+            "title": "هل تبنون لآيفون وأندرويد معًا؟",
+            "text": "نعم — نبني تطبيقات تعمل بأداء أصلي على المنصتين من كود واحد."
+          },
+          {
+            "title": "هل تنشرون التطبيق على المتاجر؟",
+            "text": "نعم. نجهّز صفحات المتجر والصور ونتولى عملية التقديم والمراجعة."
+          },
+          {
+            "title": "من يملك التطبيق والكود؟",
+            "text": "أنت. التطبيق والكود المصدري وحسابات المتاجر ملك لشركتك."
+          }
+        ]
+      }
+    }
+  ]
+}

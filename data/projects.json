@@ -1,0 +1,235 @@
+[
+  {
+    "slug": "al-aseel-center",
+    "name": "Al Aseel Center",
+    "client": "Al Aseel Center — Spine & Sports Physical Therapy, Amman",
+    "kind": "Clinic management system",
+    "services": [
+      "erp",
+      "websites"
+    ],
+    "headline": "From paper files to one smart system.",
+    "summary": "Al Aseel Center ran on paper forms. We built them a clinic management system that runs the whole day — from the first appointment to the insurance claim — in Arabic and English.",
+    "points": [
+      "Complete patient records",
+      "Treatment plans & session tracking",
+      "Appointments calendar",
+      "Insurance claims follow-up",
+      "Finance, expenses & reports",
+      "Fully bilingual: Arabic & English"
+    ],
+    "image": {
+      "src": "/work/aseel.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Al Aseel Center clinic system dashboard next to the old paper patient form"
+    },
+    "videos": [
+      {
+        "src": "/work/aseel-reel.mp4",
+        "poster": "/work/aseel-reel.jpg",
+        "title": "Before & after"
+      },
+      {
+        "src": "/work/aseel-scenario.mp4",
+        "poster": "/work/aseel-scenario.jpg",
+        "title": "One patient, one visit"
+      },
+      {
+        "src": "/work/aseel-conversation.mp4",
+        "poster": "/work/aseel-conversation.jpg",
+        "title": "A visit, start to finish"
+      }
+    ],
+    "published": true,
+    "createdAt": "2026-10-15T10:56:03.751Z",
+    "updatedAt": "2026-10-15T10:56:03.751Z",
+    "ar": {
+      "name": "مركز الأصيل",
+      "kind": "نظام إدارة عيادات",
+      "client": "مركز الأصيل لعلاج العمود الفقري والإصابات الرياضية، عمّان",
+      "headline": "من الملفات الورقية إلى نظام واحد ذكي.",
+      "summary": "كان مركز الأصيل يعمل بالنماذج الورقية. صمّمنا له نظامًا متكاملًا لإدارة العيادة يرافق يوم العمل من أول موعد حتى مطالبة التأمين — بالعربية والإنجليزية.",
+      "points": [
+        "ملفات كاملة للمرضى",
+        "الخطط العلاجية ومتابعة الجلسات",
+        "تقويم المواعيد",
+        "متابعة مطالبات التأمين",
+        "المالية والمصاريف والتقارير",
+        "يعمل باللغتين العربية والإنجليزية"
+      ],
+      "imageAlt": "لوحة نظام مركز الأصيل بجانب نموذج المريض الورقي القديم",
+      "videoTitles": [
+        "قبل وبعد",
+        "مريض واحد، زيارة واحدة",
+        "زيارة من البداية إلى النهاية"
+      ]
+    }
+  },
+  {
+    "slug": "nexora-retail-pos",
+    "name": "Nexora Retail POS",
+    "kind": "Point of sale",
+    "services": [
+      "pos",
+      "erp"
+    ],
+    "headline": "Every sale, straight to the books.",
+    "summary": "A fast, barcode-driven till for the shop counter, connected live to Nexora ERP — every scan updates stock, prices and accounts, so the end-of-day count is already done.",
+    "points": [
+      "Keeps selling when the internet drops",
+      "Cash, card, vouchers & points — split any way",
+      "PIN approvals and a full audit trail",
+      "Stock and sales synced to the ERP automatically"
+    ],
+    "image": {
+      "src": "/work/retail-pos.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Nexora Retail POS checkout screen with product grid and basket"
+    },
+    "videos": [
+      {
+        "src": "/work/retail-pos-reel.mp4",
+        "poster": "/work/retail-pos-reel.jpg",
+        "title": "Tap. Scan. Paid."
+      }
+    ],
+    "published": true,
+    "createdAt": "2026-10-15T10:56:03.751Z",
+    "updatedAt": "2026-10-15T10:56:03.751Z",
+    "ar": {
+      "name": "Nexora Retail POS",
+      "kind": "نقاط البيع",
+      "headline": "كل عملية بيع، مباشرةً إلى دفاترك.",
+      "summary": "نظام سريع يعمل بالباركود لمتجرك، ومتصل لحظيًا بنظام Nexora ERP — كل عملية مسح تحدّث المخزون والأسعار والحسابات، فيكون جرد نهاية اليوم جاهزًا.",
+      "points": [
+        "يستمر بالبيع حتى لو انقطع الإنترنت",
+        "نقدًا وبطاقة وقسائم ونقاط، وبأكثر من طريقة دفع",
+        "صلاحيات برمز PIN وسجل كامل لكل عملية",
+        "المخزون والمبيعات تتزامن مع الـ ERP تلقائيًا"
+      ],
+      "imageAlt": "شاشة الدفع في Nexora Retail POS مع شبكة المنتجات والسلة",
+      "videoTitles": [
+        "اضغط. امسح. ادفع."
+      ]
+    }
+  },
+  {
+    "slug": "nexora-erp",
+    "name": "Nexora ERP",
+    "kind": "Enterprise resource planning",
+    "services": [
+      "erp"
+    ],
+    "headline": "Sales, stock and accounts — one ledger of truth.",
+    "summary": "Our own bilingual ERP with full right-to-left support and multi-currency. Sales, purchasing, inventory, accounting and banking work as one system, with every document posting to the books automatically.",
+    "points": [
+      "Sales & purchasing with barcode scanning",
+      "Multi-store inventory with batches & expiry",
+      "Double-entry accounting & financial reports",
+      "Banks, cheques & treasury",
+      "Multi-company, multi-currency",
+      "Live dashboards for owners"
+    ],
+    "published": true,
+    "createdAt": "2026-10-15T10:56:03.751Z",
+    "updatedAt": "2026-10-15T10:56:03.751Z",
+    "ar": {
+      "name": "Nexora ERP",
+      "kind": "تخطيط موارد المؤسسات",
+      "headline": "المبيعات والمخزون والحسابات — دفتر واحد للحقيقة.",
+      "summary": "نظام ERP خاص بنا ثنائي اللغة مع دعم كامل من اليمين إلى اليسار وتعدد العملات. المبيعات والمشتريات والمخزون والمحاسبة والبنوك تعمل كنظام واحد، وكل مستند يُرحَّل إلى الدفاتر تلقائيًا.",
+      "points": [
+        "المبيعات والمشتريات مع مسح الباركود",
+        "مخزون متعدد المستودعات مع الدفعات وتواريخ الانتهاء",
+        "محاسبة بالقيد المزدوج وتقارير مالية",
+        "البنوك والشيكات والخزينة",
+        "تعدد الشركات والعملات",
+        "لوحات مؤشرات حيّة للمالكين"
+      ]
+    }
+  },
+  {
+    "slug": "nexora-clinic",
+    "name": "NexoraClinic",
+    "kind": "Clinic software",
+    "services": [
+      "erp",
+      "mobile-apps"
+    ],
+    "headline": "Your whole clinic. One simple system.",
+    "summary": "Patients, appointments, medical records, billing and insurance claims in one place — built for doctors, receptionists and admins.",
+    "points": [
+      "Smart scheduling",
+      "Medical records & prescriptions",
+      "Insurance billing",
+      "Role-based access",
+      "Arabic & English"
+    ],
+    "image": {
+      "src": "/work/clinic.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "NexoraClinic dashboard with appointments and an insurance-split invoice"
+    },
+    "published": true,
+    "createdAt": "2026-10-15T10:56:03.751Z",
+    "updatedAt": "2026-10-15T10:56:03.751Z",
+    "ar": {
+      "name": "NexoraClinic",
+      "kind": "برنامج عيادات",
+      "headline": "عيادتك كاملة. في نظام واحد بسيط.",
+      "summary": "المرضى والمواعيد والسجلات الطبية والفواتير ومطالبات التأمين في مكان واحد — مصمَّم للأطباء وموظفي الاستقبال والإداريين.",
+      "points": [
+        "جدولة ذكية",
+        "السجلات الطبية والوصفات",
+        "فوترة التأمين",
+        "صلاحيات حسب الدور",
+        "العربية والإنجليزية"
+      ],
+      "imageAlt": "لوحة NexoraClinic مع المواعيد وفاتورة مقسّمة مع التأمين"
+    }
+  },
+  {
+    "slug": "nexora-barber",
+    "name": "NexoraBarber",
+    "kind": "Booking platform",
+    "services": [
+      "mobile-apps",
+      "websites"
+    ],
+    "headline": "Find your barber. Book in seconds.",
+    "summary": "Online booking for barbershops with real availability from real chairs — plus the tools owners need to cut no-shows and see how their week is doing.",
+    "points": [
+      "Live availability & instant booking",
+      "Email, SMS & WhatsApp reminders",
+      "No double bookings",
+      "Reports per barber",
+      "English & Arabic"
+    ],
+    "image": {
+      "src": "/work/nexora-barber.png",
+      "width": 2000,
+      "height": 2550,
+      "alt": "NexoraBarber booking poster showing time-slot selection"
+    },
+    "published": true,
+    "createdAt": "2026-10-15T10:56:03.751Z",
+    "updatedAt": "2026-10-15T10:56:03.751Z",
+    "ar": {
+      "name": "NexoraBarber",
+      "kind": "منصة حجوزات",
+      "headline": "اعثر على حلاقك. واحجز في ثوانٍ.",
+      "summary": "حجز إلكتروني لمحلات الحلاقة بتوفّر حقيقي من كراسٍ حقيقية — مع الأدوات التي يحتاجها أصحاب المحلات لتقليل الغياب ومعرفة أداء أسبوعهم.",
+      "points": [
+        "توفّر مباشر وحجز فوري",
+        "تذكير عبر البريد والرسائل وواتساب",
+        "لا حجوزات مكررة",
+        "تقارير لكل حلاق",
+        "العربية والإنجليزية"
+      ],
+      "imageAlt": "ملصق NexoraBarber يعرض اختيار موعد الحجز"
+    }
+  }
+]
