@@ -30,8 +30,8 @@ export interface Project {
   updatedAt: string;
 }
 
-/** Uploaded files are served from /media; the original bundled ones from /work. */
-export const isUploaded = (src: string) => src.startsWith("/media/");
+/** Uploaded files (local /media or Vercel Blob) — shown as-is; the bundled /work ones go through image optimisation. */
+export { isUploadedSrc as isUploaded } from "./media";
 
 /** The project as shown in a language: Arabic fields where filled in, English otherwise. */
 export function localizeProject(p: Project, lang: Locale): Project {

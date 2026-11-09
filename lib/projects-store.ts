@@ -2,7 +2,9 @@ import "server-only";
 import { promises as fs } from "fs";
 import path from "path";
 import type { Locale } from "./i18n";
+import { del } from "@vercel/blob";
 import { jsonFile } from "./json-file";
+import { isBlobSrc, isUploadedSrc } from "./media";
 import { localizeProject, type Project } from "./work";
 
 const store = jsonFile<Project[]>("projects.json", () => []);
@@ -81,8 +83,12 @@ export async function removeUnusedUploads(candidates: string[]) {
   const all = await store.read();
   const used = new Set(all.flatMap((p) => [p.image?.src, ...(p.videos ?? []).flatMap((v) => [v.src, v.poster])]));
   for (const src of candidates) {
-    if (!src?.startsWith("/media/") || used.has(src)) continue;
-    const file = path.join(/*turbopackIgnore: true*/ UPLOAD_DIR, path.basename(src));
-    await fs.unlink(file).catch(() => {});
+    if (!src || !isUploadedSrc(src) || used.has(src)) continue;
+    if (isBlobSrc(src)) {
+      await del(src).catch((err) => console.error("[uploads] couldn't delete from Blob:", err));
+    } else {
+      const file = path.join(/*turbopackIgnore: true*/ UPLOAD_DIR, path.basename(src));
+      await fs.unlink(file).catch(() => {});
+    }
   }
 }

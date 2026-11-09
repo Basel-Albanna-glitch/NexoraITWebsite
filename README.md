@@ -40,6 +40,10 @@ Where things are stored (back these up):
 
 Move them with `DATA_DIR` and `UPLOAD_DIR` env vars (e.g. to a mounted disk).
 
+**On Vercel** the same data lives in the cloud instead (chosen automatically from env vars):
+text, projects, messages and stats in **Upstash Redis** (keys `nexorait:content`, `nexorait:projects`, …),
+uploads in **Vercel Blob** (`uploads/…`). Until something is saved, Redis falls back to the `data/*.json` in git.
+
 ## Contact form backend
 
 `POST /api/contact` validates the message, blocks bots (honeypot + per-IP rate limit), saves it to the dashboard inbox,
@@ -47,8 +51,21 @@ then emails it via SMTP if `CONTACT_TO` and `SMTP_*` are set in `.env.local`.
 
 ## Deploy
 
-Because the dashboard saves files to disk, host on a server with a **persistent disk**: a VPS
+### Vercel
+
+1. Import the GitHub repo in Vercel (framework: Next.js, defaults are fine).
+2. In the project's **Storage** tab, connect:
+   - **Upstash for Redis** (Marketplace) — adds `KV_REST_API_URL` / `KV_REST_API_TOKEN`.
+   - **Blob** — adds `BLOB_READ_WRITE_TOKEN`.
+3. In **Settings → Environment Variables** add `ADMIN_PASSWORD`, `NEXT_PUBLIC_SITE_URL`, and the `SMTP_*` /
+   `CONTACT_TO` values from `.env.example` for contact emails.
+4. Redeploy so the new variables are picked up.
+
+Without the Redis/Blob variables the dashboard can't save on Vercel (its disk is read-only).
+Note: Vercel's free Hobby plan is for non-commercial use; a business site should be on Pro.
+
+### Your own server
+
+Without those variables everything is stored on disk, so a server with a **persistent disk** also works: a VPS
 (DigitalOcean, Hetzner, Hostinger VPS…), or Railway/Render with a volume. Run `npm run build && npm start`
 behind a reverse proxy with HTTPS, and keep `data/` and `storage/` on the persistent disk.
-
-Serverless hosts like Vercel or Netlify don't keep uploaded files, so they'd need a cloud storage change first.

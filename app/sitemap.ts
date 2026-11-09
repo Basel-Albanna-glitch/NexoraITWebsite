@@ -3,6 +3,9 @@ import { getContent } from "@/lib/content-store";
 import { SITE_URL } from "@/lib/site-url";
 import { href, LOCALES } from "@/lib/i18n";
 
+// Pages and services can be added from the dashboard, so rebuild the sitemap at most hourly.
+export const revalidate = 3600;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const { services, customPages = [] } = await getContent();
   const paths = [

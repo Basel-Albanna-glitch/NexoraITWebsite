@@ -1,11 +1,13 @@
 import { isAdmin } from "@/lib/auth";
 import { stripLocale } from "@/lib/i18n";
-import { recordView } from "@/lib/stats-store";
+import { after } from "next/server";
+import { flush, recordView } from "@/lib/stats-store";
 
 export const runtime = "nodejs";
 
 const BOT_RE = /bot|crawl|spider|slurp|preview|facebookexternalhit|headless|lighthouse|pingdom|monitor/i;
-const KNOWN_PATHS = /^\/(services(\/[a-z-]+)?|work|about|contact|privacy)?$/;
+// fixed pages, services and pages added from the dashboard (one path segment)
+const KNOWN_PATHS = /^\/(services(\/[a-z0-9-]+)?|[a-z0-9-]+)?$/;
 
 /** Page-view beacon from the public site. Always answers 204 so it never shows errors to visitors. */
 export async function POST(req: Request) {
@@ -27,5 +29,8 @@ export async function POST(req: Request) {
 
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0].trim() || req.headers.get("x-real-ip") || "local";
   recordView({ path, lang, ref, ip, ua });
+  // Serverless instances can be frozen right after responding, so save now (after the reply is sent)
+  // instead of waiting for the in-memory batch timer.
+  if (process.env.VERCEL) after(flush);
   return new Response(null, { status: 204 });
 }

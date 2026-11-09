@@ -1,4 +1,5 @@
 // Validates project data sent from the dashboard. Used by the API (authoritative) and the form (early feedback).
+import { isMediaSrc } from "./media";
 import type { ProjectImage, ProjectText, ProjectVideo } from "./work";
 
 export interface ProjectDraft {
@@ -19,8 +20,7 @@ export type DraftErrors = Partial<Record<keyof ProjectDraft, string>>;
 
 // the original services; callers pass the current list, since services can be added in the dashboard
 export const SERVICE_SLUGS = ["websites", "erp", "pos", "mobile-apps"];
-// only our own media paths, never arbitrary URLs
-const MEDIA_RE = /^\/(media|work)\/[A-Za-z0-9._-]+$/;
+// media addresses must be our own (local /media, bundled /work or our Vercel Blob uploads) — see lib/media.ts
 
 const str = (v: unknown, max: number) => (typeof v === "string" ? v.trim().slice(0, max) : "");
 
@@ -48,7 +48,7 @@ export function validateDraft(raw: unknown, serviceSlugs: readonly string[] = SE
   if (r.image) {
     const i = r.image as Record<string, unknown>;
     const src = str(i.src, 200), width = Number(i.width), height = Number(i.height);
-    if (!MEDIA_RE.test(src) || !(width > 0) || !(height > 0)) errors.image = "The image upload is invalid — try uploading it again.";
+    if (!isMediaSrc(src) || !(width > 0) || !(height > 0)) errors.image = "The image upload is invalid — try uploading it again.";
     else image = { src, width: Math.round(width), height: Math.round(height), alt: str(i.alt, 200) || name };
   }
 
@@ -56,7 +56,7 @@ export function validateDraft(raw: unknown, serviceSlugs: readonly string[] = SE
   for (const v of Array.isArray(r.videos) ? r.videos.slice(0, 6) : []) {
     const o = (v ?? {}) as Record<string, unknown>;
     const src = str(o.src, 200), poster = str(o.poster, 200);
-    if (!MEDIA_RE.test(src) || (poster && !MEDIA_RE.test(poster))) { errors.videos = "A video upload is invalid — remove it and upload again."; break; }
+    if (!isMediaSrc(src) || (poster && !isMediaSrc(poster))) { errors.videos = "A video upload is invalid — remove it and upload again."; break; }
     videos.push({ src, title: str(o.title, 80) || "Video", ...(poster ? { poster } : {}) });
   }
 

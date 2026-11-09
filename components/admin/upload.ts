@@ -1,6 +1,38 @@
 // Browser-side helpers for the dashboard: upload with progress, read image size, grab a video poster frame.
+import { upload as blobUpload } from "@vercel/blob/client";
+import { UPLOAD_TYPES } from "@/lib/media";
 
-export function uploadFile(file: Blob, onProgress?: (fraction: number) => void): Promise<string> {
+let modeRequest: Promise<"blob" | "local"> | null = null;
+/** Asks the server once whether uploads go to Vercel Blob or to its own disk. */
+function uploadMode() {
+  modeRequest ??= fetch("/api/admin/upload")
+    .then((r) => (r.ok ? r.json() : { mode: "local" }))
+    .then((j: { mode?: string }) => (j.mode === "blob" ? "blob" : "local"))
+    .catch(() => { modeRequest = null; return "local" as const; });
+  return modeRequest;
+}
+
+/** Uploads a picture or video and resolves with the address to store on the project. */
+export async function uploadFile(file: Blob, onProgress?: (fraction: number) => void): Promise<string> {
+  if ((await uploadMode()) === "local") return uploadToServer(file, onProgress);
+  const ext = UPLOAD_TYPES[file.type];
+  if (!ext) throw new Error("Use JPG, PNG, WebP or GIF images, or MP4, WebM or MOV videos.");
+  try {
+    const result = await blobUpload(`uploads/${Date.now().toString(36)}${ext}`, file, {
+      access: "public",
+      handleUploadUrl: "/api/admin/upload",
+      contentType: file.type,
+      multipart: file.size > 50 * 1024 * 1024, // big videos go up in parallel parts with retries
+      onUploadProgress: (e) => onProgress?.(e.percentage / 100),
+    });
+    return result.url;
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : "";
+    throw new Error(/signed in/i.test(msg) ? "You were signed out — sign in again." : "Upload failed — check your connection and try again.");
+  }
+}
+
+function uploadToServer(file: Blob, onProgress?: (fraction: number) => void): Promise<string> {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
     xhr.open("PUT", "/api/admin/upload");
