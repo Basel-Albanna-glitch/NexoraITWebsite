@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { ContentList } from "@/components/admin/ContentLists";
 import { requireAdmin } from "@/lib/admin-session";
 import { PAGE_SCHEMAS } from "@/lib/content";
-import { getContent } from "@/lib/content-store";
+import { getContent, localizePage } from "@/lib/content-store";
 
 export const metadata = { title: "Website text" };
 
 export default async function ContentIndex() {
   const { lang, t } = await requireAdmin();
-  const { services } = await getContent();
+  const { services, customPages = [] } = await getContent();
   return (
     <>
       <div className="page-title">
@@ -22,12 +23,15 @@ export default async function ContentIndex() {
           <li key={key}><Link href={`/admin/content/${key}`}><strong>{s.label[lang]}</strong><span>{t.common.edit} →</span></Link></li>
         ))}
       </ul>
+
+      <h2 className="a-subhead">{t.content.myPages}</h2>
+      <p className="admin-sub">{t.content.myPagesHint}</p>
+      <ContentList lang={lang} kind="page"
+                   initial={customPages.map((p) => ({ slug: p.slug, name: localizePage(p, lang).navLabel, published: p.published }))} />
+
       <h2 className="a-subhead">{t.content.services}</h2>
-      <ul className="ce-index">
-        {services.map((s) => (
-          <li key={s.slug}><Link href={`/admin/content/service-${s.slug}`}><strong>{s[lang].title}</strong><span>{t.common.edit} →</span></Link></li>
-        ))}
-      </ul>
+      <ContentList lang={lang} kind="service"
+                   initial={services.map((s) => ({ slug: s.slug, name: s[lang].title || s.en.title || s.slug }))} />
     </>
   );
 }

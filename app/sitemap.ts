@@ -4,8 +4,11 @@ import { SITE_URL } from "@/lib/site-url";
 import { href, LOCALES } from "@/lib/i18n";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const { services } = await getContent();
-  const paths = ["/", "/services", ...services.map((s) => `/services/${s.slug}`), "/work", "/about", "/contact", "/privacy"];
+  const { services, customPages = [] } = await getContent();
+  const paths = [
+    "/", "/services", ...services.map((s) => `/services/${s.slug}`), "/work", "/about", "/contact", "/privacy",
+    ...customPages.filter((p) => p.published).map((p) => `/${p.slug}`),
+  ];
   return LOCALES.flatMap((lang) =>
     paths.map((p) => ({
       url: `${SITE_URL}${href(lang, p)}`,

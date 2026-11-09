@@ -96,7 +96,7 @@ export function ProjectForm({ lang, project, services }: {
     if (uploads.length) { setStatus(t.waitUploads); return; }
     const lines = (s: string) => s.split("\n").map((x) => x.trim()).filter(Boolean);
     const draft = { ...d, points: lines(pointsText), ar: { ...d.ar, points: lines(arPointsText) } };
-    const check = validateDraft(draft);
+    const check = validateDraft(draft, services.map((s) => s.slug));
     if (!check.ok) { setErrors(check.errors); setStatus(t.fix); return; }
     setErrors({});
     setSaving(true);

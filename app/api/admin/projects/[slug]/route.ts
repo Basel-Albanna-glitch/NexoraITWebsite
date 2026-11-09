@@ -1,6 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 import { isAdmin } from "@/lib/auth";
+import { getContent } from "@/lib/content-store";
 import { validateDraft } from "@/lib/project-input";
 import { deleteProject, getProject, removeUnusedUploads, updateProject } from "@/lib/projects-store";
 import type { Project } from "@/lib/work";
@@ -21,7 +22,7 @@ export async function PUT(req: Request, { params }: Ctx) {
   const before = await getProject(slug);
   if (!before) return notFound();
 
-  const result = validateDraft(await req.json().catch(() => null));
+  const result = validateDraft(await req.json().catch(() => null), (await getContent()).services.map((s) => s.slug));
   if (!result.ok) return NextResponse.json({ errors: result.errors }, { status: 422 });
 
   const project = await updateProject(slug, result.data);

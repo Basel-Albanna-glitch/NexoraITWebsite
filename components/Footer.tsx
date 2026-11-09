@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { getPage, getServices, getSettings } from "@/lib/content-store";
+import { getCustomPages, getPage, getServices, getSettings } from "@/lib/content-store";
 import { getDictionary, href, type Locale } from "@/lib/i18n";
 import { Logo } from "./Logo";
 import { SocialIcons } from "./SocialIcons";
 
 export async function Footer({ lang }: { lang: Locale }) {
   const t = getDictionary(lang);
-  const [settings, services, home] = await Promise.all([getSettings(), getServices(lang), getPage("home", lang)]);
+  const [settings, services, home, pages] = await Promise.all([getSettings(), getServices(lang), getPage("home", lang), getCustomPages(lang)]);
   return (
     <footer className="footer wrap">
       <div className="footer__grid">
@@ -22,6 +22,7 @@ export async function Footer({ lang }: { lang: Locale }) {
           <p className="footer__head">{t.footer.company}</p>
           <Link href={href(lang, "/work")}>{t.footer.ourWork}</Link>
           <Link href={href(lang, "/about")}>{t.footer.about}</Link>
+          {pages.map((p) => <Link key={p.slug} href={href(lang, `/${p.slug}`)}>{p.navLabel}</Link>)}
           <Link href={href(lang, "/contact")}>{t.footer.contact}</Link>
           <Link href={href(lang, "/privacy")}>{t.footer.privacy}</Link>
         </nav>

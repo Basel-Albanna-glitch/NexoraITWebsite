@@ -17,14 +17,14 @@ export interface ProjectDraft {
 
 export type DraftErrors = Partial<Record<keyof ProjectDraft, string>>;
 
-// fixed service slugs (their text is editable, the set is not)
+// the original services; callers pass the current list, since services can be added in the dashboard
 export const SERVICE_SLUGS = ["websites", "erp", "pos", "mobile-apps"];
 // only our own media paths, never arbitrary URLs
 const MEDIA_RE = /^\/(media|work)\/[A-Za-z0-9._-]+$/;
 
 const str = (v: unknown, max: number) => (typeof v === "string" ? v.trim().slice(0, max) : "");
 
-export function validateDraft(raw: unknown): { ok: true; data: ProjectDraft } | { ok: false; errors: DraftErrors } {
+export function validateDraft(raw: unknown, serviceSlugs: readonly string[] = SERVICE_SLUGS): { ok: true; data: ProjectDraft } | { ok: false; errors: DraftErrors } {
   const r = (raw ?? {}) as Record<string, unknown>;
   const errors: DraftErrors = {};
 
@@ -36,7 +36,7 @@ export function validateDraft(raw: unknown): { ok: true; data: ProjectDraft } | 
   const points = (Array.isArray(r.points) ? r.points : [])
     .map((p) => str(p, 120)).filter(Boolean).slice(0, 12);
   const services = (Array.isArray(r.services) ? r.services : [])
-    .filter((s): s is string => typeof s === "string" && SERVICE_SLUGS.includes(s));
+    .filter((s): s is string => typeof s === "string" && serviceSlugs.includes(s));
 
   if (name.length < 2) errors.name = "Give the project a name.";
   if (!kind) errors.kind = "Say what kind of project it is, e.g. “Clinic management system”.";

@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { RevealObserver } from "@/components/Reveal";
 import { Tracker } from "@/components/Tracker";
-import { getServices, getSettings } from "@/lib/content-store";
+import { getCustomPages, getServices, getSettings } from "@/lib/content-store";
 import { fontVars } from "@/lib/fonts";
 import { SITE_URL } from "@/lib/site-url";
 import { dirOf, getDictionary, isLocale, LOCALES } from "@/lib/i18n";
@@ -39,7 +39,7 @@ export default async function SiteLayout({ children, params }: LayoutProps<"/[la
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const t = getDictionary(lang);
-  const [settings, services] = await Promise.all([getSettings(), getServices(lang)]);
+  const [settings, services, pages] = await Promise.all([getSettings(), getServices(lang), getCustomPages(lang)]);
 
   // Tells search engines who we are and which social profiles belong to us
   const orgLd = {
@@ -67,6 +67,7 @@ export default async function SiteLayout({ children, params }: LayoutProps<"/[la
         <RevealObserver />
         <Tracker />
         <Nav lang={lang} services={services.map((s) => ({ slug: s.slug, title: s.title }))}
+             pages={pages.map((p) => ({ slug: p.slug, label: p.navLabel }))}
              t={{ nav: t.nav, cta: t.cta, theme: t.theme, switchTo: t.switchTo, switchToShort: t.switchToShort }} />
         {children}
         <Footer lang={lang} />

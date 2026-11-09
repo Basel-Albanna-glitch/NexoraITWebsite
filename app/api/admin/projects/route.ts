@@ -1,6 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 import { isAdmin } from "@/lib/auth";
+import { getContent } from "@/lib/content-store";
 import { validateDraft } from "@/lib/project-input";
 import { createProject, getAllProjects, reorderProjects } from "@/lib/projects-store";
 
@@ -16,7 +17,7 @@ export async function GET() {
 /** Create a project. */
 export async function POST(req: Request) {
   if (!(await isAdmin())) return unauthorized();
-  const result = validateDraft(await req.json().catch(() => null));
+  const result = validateDraft(await req.json().catch(() => null), (await getContent()).services.map((s) => s.slug));
   if (!result.ok) return NextResponse.json({ errors: result.errors }, { status: 422 });
   const project = await createProject(result.data);
   revalidatePath("/[lang]", "layout");

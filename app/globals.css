@@ -837,3 +837,14 @@ body { transition: background-color .3s ease, color .3s ease; }
   .tile__value.is-hero { font-size: 44px; }
   .cols { grid-template-rows: 180px auto; }
 }
+
+/* dashboard: added pages & services */
+.ce-row { grid-template-columns: 34px 1fr auto auto; }
+.ce-add { margin-top: 14px; }
+.ce-addform { margin-top: 14px; display: grid; gap: 16px; max-width: 760px; }
+.ce-addform .a-field input { width: 100%; }
+@media (max-width: 760px) {
+  .ce-row { grid-template-columns: 34px 1fr; }
+  .ce-row .a-badge, .ce-row .a-row__actions { grid-column: 2 / -1; }
+  .ce-addform .ce__cols { grid-template-columns: 1fr; }
+}

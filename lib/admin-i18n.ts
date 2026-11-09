@@ -50,6 +50,16 @@ const en = {
   content: {
     title: "Website text", intro: "Edit the words on every page, in English and Arabic. Changes go live as soon as you save.",
     pages: "Pages", services: "Services", editing: "Editing", unsaved: "You have unsaved changes.",
+    myPages: "Your pages (menu tabs)", myPagesHint: "Each published page appears as a tab in the website menu, in this order.",
+    noPages: "No pages added yet.", addPage: "+ Add page", addService: "+ Add service",
+    nameEn: "Name (English)", nameAr: "Name (Arabic)", shape: "Animation", create: "Add", creating: "Adding…",
+    nameRequired: "Enter the English name.", live: "In menu", hidden: "Hidden", publish: "Show in menu", hide: "Hide",
+    view: "View", newPageNote: "New pages start hidden — fill in the text, then press “Show in menu”.",
+    confirmDeletePage: (n: string) => `Delete the page “${n}”? This can't be undone.`,
+    confirmDeleteService: (n: string) => `Delete the service “${n}”? Its page will disappear from the website. This can't be undone.`,
+    serviceInUse: (ps: string) => `This service is used by: ${ps}. Remove it from those projects first.`,
+    actionError: "Couldn't do that. Try again.",
+    shapes: { brain: "Brain", globe: "Globe", wave: "Wave", lattice: "Lattice", torus: "Ring", phone: "Phone" },
   },
   settings: {
     title: "Settings", contact: "Contact details", email: "Email", phone: "Phone", phoneHint: "international format, e.g. +962 7 9000 0000 — leave empty to hide",
@@ -108,6 +118,16 @@ const ar: AdminDict = {
   content: {
     title: "نصوص الموقع", intro: "عدّل الكلمات في كل صفحة بالعربية والإنجليزية. تظهر التغييرات فور الحفظ.",
     pages: "الصفحات", services: "الخدمات", editing: "تعديل", unsaved: "لديك تغييرات غير محفوظة.",
+    myPages: "صفحاتك (تبويبات القائمة)", myPagesHint: "كل صفحة منشورة تظهر كتبويب في قائمة الموقع، بهذا الترتيب.",
+    noPages: "لم تُضف أي صفحات بعد.", addPage: "+ إضافة صفحة", addService: "+ إضافة خدمة",
+    nameEn: "الاسم (بالإنجليزية)", nameAr: "الاسم (بالعربية)", shape: "الحركة", create: "إضافة", creating: "جارٍ الإضافة…",
+    nameRequired: "أدخل الاسم بالإنجليزية.", live: "في القائمة", hidden: "مخفية", publish: "إظهار في القائمة", hide: "إخفاء",
+    view: "عرض", newPageNote: "تبدأ الصفحات الجديدة مخفية — اكتب النص ثم اضغط «إظهار في القائمة».",
+    confirmDeletePage: (n: string) => `حذف الصفحة «${n}»؟ لا يمكن التراجع عن ذلك.`,
+    confirmDeleteService: (n: string) => `حذف الخدمة «${n}»؟ ستختفي صفحتها من الموقع. لا يمكن التراجع عن ذلك.`,
+    serviceInUse: (ps: string) => `هذه الخدمة مستخدمة في: ${ps}. أزلها من هذه المشاريع أولًا.`,
+    actionError: "تعذّر تنفيذ ذلك. حاول مرة أخرى.",
+    shapes: { brain: "دماغ", globe: "كرة أرضية", wave: "موجة", lattice: "شبكة", torus: "حلقة", phone: "هاتف" },
   },
   settings: {
     title: "الإعدادات", contact: "بيانات التواصل", email: "البريد الإلكتروني", phone: "الهاتف", phoneHint: "بالصيغة الدولية، مثل ‎+962 7 9000 0000‎ — اتركه فارغًا لإخفائه",

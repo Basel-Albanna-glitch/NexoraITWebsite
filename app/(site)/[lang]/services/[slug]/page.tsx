@@ -11,7 +11,8 @@ import { getDictionary, href, isLocale, LOCALES } from "@/lib/i18n";
 import { projectsFor } from "@/lib/projects-store";
 import { alternates } from "@/lib/seo";
 
-export const dynamicParams = false;
+// Services added from the dashboard after the build are rendered on first visit.
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const { services } = await getContent();
@@ -50,6 +51,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/service
       </PageHero>
 
       {/* FEATURES */}
+      {s.features.length > 0 && (
       <section className="wrap section">
         <div className="section-head">
           <p className="label reveal">{t.service.included}</p>
@@ -65,8 +67,10 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/service
           ))}
         </ul>
       </section>
+      )}
 
       {/* AUDIENCE */}
+      {(s.audience.headline || s.audience.text) && (
       <section className="split wrap">
         <h2 className="heading-lg reveal">{s.audience.headline}</h2>
         <div className="split__copy">
@@ -77,8 +81,10 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/service
           </ul>
         </div>
       </section>
+      )}
 
       {/* PROCESS */}
+      {s.process.length > 0 && (
       <section className="split split--reverse wrap">
         <div className="split__visual">
           <Constellation shape="globe" count={1000} mobileCount={600} scale={0.3} speed={0.0024} interactive={false} />
@@ -93,6 +99,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/service
           </ol>
         </div>
       </section>
+      )}
 
       {/* WORK */}
       {projects.length > 0 && (
@@ -123,6 +130,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/service
       )}
 
       {/* OTHER SERVICES */}
+      {others.length > 0 && (
       <section className="wrap section">
         <p className="label reveal">{t.service.others}</p>
         <ul className="other-services">
@@ -133,6 +141,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/service
           ))}
         </ul>
       </section>
+      )}
 
       <CtaBand lang={lang} label={t.service.ctaLabel} text={t.service.ctaText} />
     </main>

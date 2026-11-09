@@ -42,7 +42,29 @@ export interface Settings {
   social: { instagram: string; facebook: string; linkedin: string; x: string };
 }
 
-export interface SiteContent { settings: Settings; pages: PagesContent; services: ServiceContent[] }
+/** A page the owner adds from the dashboard. Published pages appear as a tab in the site menu at /<slug>. */
+export interface CustomPageText { navLabel: string; label: string; title: string; intro: string; sections: Pair[] }
+export interface CustomPage { slug: string; shape: ShapeName; published: boolean; en: CustomPageText; ar: CustomPageText }
+
+export interface SiteContent { settings: Settings; pages: PagesContent; services: ServiceContent[]; customPages?: CustomPage[] }
+
+export const SHAPES: ShapeName[] = ["brain", "globe", "wave", "lattice", "torus", "phone"];
+
+/** Addresses already used by the site, so a new page can't take them over. */
+export const RESERVED_SLUGS = ["services", "work", "about", "contact", "privacy", "admin", "api", "media", "en", "ar", "_next"];
+
+/** Latin-only URL slug: "Our Pricing!" → "our-pricing". Empty for names without Latin letters/digits. */
+export const toSlug = (s: string) =>
+  s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
+
+/** First free slug based on `name` (falls back to `fallback-<id>` for Arabic-only names). */
+export function uniqueSlug(name: string, taken: string[], fallback: string) {
+  const base = toSlug(name) || `${fallback}-${Date.now().toString(36)}`;
+  let slug = base;
+  for (let i = 2; taken.includes(slug); i++) slug = `${base}-${i}`;
+  return slug;
+}
 
 /* ---------- Schema ---------- */
 
@@ -114,6 +136,14 @@ export const SERVICE_SCHEMA: Field[] = [
   group("audience", "Who it's for", "لمن هذه الخدمة", [t("headline", "Headline", "العنوان"), ta("text", "Text", "النص"), lines("tags", "Tags (one per line)", "الوسوم (واحد في كل سطر)", 12)]),
   pairs("process", "How we deliver", "كيف ننفّذ", 6),
   pairs("faqs", "Questions & answers", "الأسئلة والأجوبة", 12),
+];
+
+export const CUSTOM_PAGE_SCHEMA: Field[] = [
+  t("navLabel", "Tab name in the menu", "اسم التبويب في القائمة", 40),
+  t("label", "Small label", "العنوان الصغير"),
+  t("title", "Big headline", "العنوان الرئيسي"),
+  ta("intro", "Intro text", "النص التعريفي"),
+  pairs("sections", "Sections (heading + text)", "الأقسام (عنوان + نص)", 12),
 ];
 
 /** Coerces untrusted input into exactly the shape the schema describes (unknown keys dropped, strings capped). */

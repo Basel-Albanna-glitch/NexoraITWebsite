@@ -11,9 +11,11 @@ interface Props {
   lang: Locale;
   t: Pick<Dictionary, "nav" | "cta" | "theme" | "switchTo" | "switchToShort">;
   services: { slug: string; title: string }[];
+  /** Pages added from the dashboard, shown as extra tabs before Contact. */
+  pages?: { slug: string; label: string }[];
 }
 
-export function Nav({ lang, t, services }: Props) {
+export function Nav({ lang, t, services, pages = [] }: Props) {
   const pathname = usePathname();
   const path = stripLocale(pathname); // locale-free, e.g. "/services/pos"
   const [open, setOpen] = useState(false);
@@ -33,6 +35,7 @@ export function Nav({ lang, t, services }: Props) {
     { path: "/services", label: t.nav.services },
     { path: "/work", label: t.nav.work },
     { path: "/about", label: t.nav.about },
+    ...pages.map((p) => ({ path: `/${p.slug}`, label: p.label })),
     { path: "/contact", label: t.nav.contact },
   ];
   const isActive = (p: string) => path === p || path.startsWith(p + "/");
